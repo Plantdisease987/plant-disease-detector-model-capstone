@@ -1,1 +1,40 @@
+<!-- FILE: index.html -->
+<img id="preview" alt="preview" />
+</div>
+</div>
+<div class="controls">
+<button id="clear-btn" class="btn ghost">Clear</button>
+<button id="predict-btn" class="btn primary">Detect Disease</button>
+</div>
+<div id="status" class="status">Model loading...
+<span id="spinner" class="spinner" aria-hidden="true"></span>
+</div>
+</section>
 
+<aside class="card result-card">
+<h2>Diagnosis</h2>
+<div id="results" class="results empty">
+<p class="muted">No prediction yet. Upload an image and click <strong>Detect Disease</strong>.</p>
+</div>
+<div class="tips">
+<h3>Treatment tips</h3>
+<ul id="treatment-list">
+<li>Select a disease to see suggested actions.</li>
+</ul>
+</div>
+</aside>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<small>&copy; Plant Disease Detector</small>
+</div>
+</footer>
+
+<!-- TensorFlow + Teachable Machine -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.11.0/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.6/dist/teachablemachine-image.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
